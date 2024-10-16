@@ -39,27 +39,27 @@ body header{
 header .Titulo{
     display: flex;
     flex-direction: column;
-    width: 15rem;
-    height: 8rem;
+    width: 37rem;
+    height: 5rem;
 }
 header .Titulo a{
     color: var(--ColorLetraH);
     text-shadow: 1px 1px 15px black;
-    width: 500px;
-    margin: 2% 2%;
+    width: 25rem;
+    margin: 1rem 1rem;
 }
 header .Opciones{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 650px;
-    height: 80px;
+    width: 22rem;
+    height: 5rem;
 }
 header .Opciones a{
     text-shadow: 1px 1px 15px black;
     color: var(--ColorLetraH);
-    margin: 8% 3%;
-    height: 30px;
+    margin: 2rem 1rem;
+    height: 1rem;
 }
 .Empezar{
     display: flex;
