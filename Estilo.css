@@ -39,7 +39,7 @@ body header{
 header .Titulo{
     display: flex;
     flex-direction: column;
-    width: 37rem;
+    width: 67rem;
     height: 5rem;
 }
 header .Titulo a{
@@ -65,21 +65,21 @@ header .Opciones a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1%;
+    margin-bottom: 1rem;
 }
 .Empezar a{
     background-color: var(--ColorBoton);
     color: var(--ColorLetraH);
     box-shadow: 1px 1px 10px var(--ColorSombraBoton);
     border-radius: 20px;
-    padding: 1%;
+    padding: 1rem;
     font-weight: 700;
     font-size: 120%;
     transition: all 1s;
 }
 .Empezar a:hover{
     font-size: large;
-    padding: 2%;
+    padding: 2rem;
     color: var(--ColorBoton);
     background-color: var(--ColorLetraH);
     border-radius: 30px;
