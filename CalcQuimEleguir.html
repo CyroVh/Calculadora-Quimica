@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <title>Calculadora quimica</title>
+</head>
+<body>
+    <header>
+        <div class="Titulo">
+            <a href="index.html"><h1>Calculadora quimica</h1></a>
+        </div>
+        <div class="Opciones">
+            <a href="index.html">Inicio</a>
+            <a href="CalcQuimEleguir.html">Empezar</a>
+            <a href="CalcQuimBuscar.html">Buscar Elemento</a>
+        </div>
+    </header>
+    <div class="CuerpoPag">
+        <div class="Elementos">
+            <h1>Elementos para combinar</h1>
+            <table class="ElementosNoMetales">
+                <tr>
+                    <td><button id="H"><img src="Imagenes/Hidrogeno.png" alt="Hidrogeno"></button></td>
+                    <td><button id="C"><img src="Imagenes/Carbono.png" alt="Carbono"></button></td>
+                    <td><button id="N"><img src="Imagenes/Nitrogeno.png" alt="Nitrogeno"></button></td>
+                    <td><button id="O"><img src="Imagenes/Oxigeno.png" alt="Oxigeno"></button></td>
+                    <td><button id="P"><img src="Imagenes/Fosforo.png" alt="Fosforo"></button></td>
+                    <td><button id="S"><img src="Imagenes/Azufre.png" alt="Azufre"></button></td>
+                    <td><button id="Se"><img src="Imagenes/Selenio.png" alt="Selenio"></button></td>
+                </tr>
+            </table>
+            
+            <table class="ElementosMetalesAlcalinos">
+                <tr>
+                    <td><button id="Li"><img src="Imagenes/Litio.png" alt="Litio"></button></td>
+                    <td><button id="Na"><img src="Imagenes/Sodio.png" alt="Sodio"></button></td>
+                    <td><button id="K"><img src="Imagenes/Potasio.png" alt="Potasio"></button></td>
+                    <td><button id="Rb"><img src="Imagenes/Rubidio.png" alt="Rubidio"></button></td>
+                    <td><button id="Cs"><img src="Imagenes/Cesio.png" alt="Cesio"></button></td>
+                    <td><button id="Fr"><img src="Imagenes/Francio.png" alt="Francio"></button></td>
+                </tr>
+            </table>
+            
+            <table class="ElementosAlcalinoterreos">
+                <tr>
+                    <td><button id="Be"><img src="Imagenes/Berilio.png" alt="Berilio"></button></td>
+                    <td><button id="Mg"><img src="Imagenes/Magnesio.png" alt="Magnesio"></button></td>
+                    <td><button id="Ca"><img src="Imagenes/Calcio.png" alt="Calcio"></button></td>
+                    <td><button id="Sr"><img src="Imagenes/Estroncio.png" alt="Estroncio"></button></td>
+                    <td><button id="Ba"><img src="Imagenes/Bario.png" alt="Bario"></button></td>
+                    <td><button id="Ra"><img src="Imagenes/Radio.png" alt="Radio"></button></td>
+                </tr>
+            </table>
+            
+            <table class="ElementosMetalesDeTransicion">
+                <tr>
+                    <td><button id="Sc"><img src="Imagenes/Escandio.png" alt="Escandio"></button></td>
+                    <td><button id="Ti"><img src="Imagenes/Titanio.png" alt="Titanio"></button></td>
+                    <td><button id="V"><img src="Imagenes/Vanadio.png" alt="Vanadio"></button></td>
+                    <td><button id="Cr"><img src="Imagenes/Cromo.png" alt="Cromo"></button></td>
+                    <td><button id="Mn"><img src="Imagenes/Manganeso.png" alt="Manganeso"></button></td>
+                    <td><button id="Fe"><img src="Imagenes/Hierro.png" alt="Hierro"></button></td>
+                    <td><button id="Co"><img src="Imagenes/Cobalto.png" alt="Cobalto"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="Ni"><img src="Imagenes/Niquel.png" alt="Niquel"></button></td>
+                    <td><button id="Cu"><img src="Imagenes/Cobre.png" alt="Cobre"></button></td>
+                    <td><button id="Zn"><img src="Imagenes/Zinc.png" alt="Zinc"></button></td>
+                    <td><button id="Y"><img src="Imagenes/Itrio.png" alt="Itrio"></button></td>
+                    <td><button id="Zr"><img src="Imagenes/Zirconio.png" alt="Zirconio"></button></td>
+                    <td><button id="Nb"><img src="Imagenes/Niobio.png" alt="Niobio"></button></td>
+                    <td><button id="Mo"><img src="Imagenes/Molibdeno.png" alt="Molibdeno"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="Tc"><img src="Imagenes/Tecnecio.png" alt="Tecnecio"></button></td>
+                    <td><button id="Ru"><img src="Imagenes/Rutenio.png" alt="Rutenio"></button></td>
+                    <td><button id="Rh"><img src="Imagenes/Rodio.png" alt="Rodio"></button></td>
+                    <td><button id="Pd"><img src="Imagenes/Paladio.png" alt="Paladio"></button></td>
+                    <td><button id="Ag"><img src="Imagenes/Plata.png" alt="Plata"></button></td>
+                    <td><button id="Cd"><img src="Imagenes/Cadmio.png" alt="Cadmio"></button></td>
+                    <td><button id="Lu"><img src="Imagenes/Lutecio.png" alt="Lutecio"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="Hf"><img src="Imagenes/Hafmio.png" alt="Hafmio"></button></td>
+                    <td><button id="Ta"><img src="Imagenes/Tantalio.png" alt="Tantalio"></button></td>
+                    <td><button id="W"><img src="Imagenes/Wolframio.png" alt="Wolframio"></button></td>
+                    <td><button id="Re"><img src="Imagenes/Renio.png" alt="Renio"></button></td>
+                    <td><button id="Os"><img src="Imagenes/Osmio.png" alt="Osmio"></button></td>
+                    <td><button id="Ir"><img src="Imagenes/Iridio.png" alt="Iridio"></button></td>
+                    <td><button id="Pt"><img src="Imagenes/Platino.png" alt="Platino"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="Au"><img src="Imagenes/Oro.png" alt="Oro"></button></td>
+                    <td><button id="Hg"><img src="Imagenes/Mercurio.png" alt="Mercurio"></button></td>
+                    <td><button id="Lr"><img src="Imagenes/Lawrencio.png" alt="Lawrencio"></button></td>
+                    <td><button id="Rf"><img src="Imagenes/Rutherfordio.png" alt="Rutherfordio"></button></td>
+                    <td><button id="Db"><img src="Imagenes/Dubnio.png" alt="Dubnio"></button></td>
+                    <td><button id="Sg"><img src="Imagenes/Seaborgio.png" alt="Seaborgio"></button></td>
+                    <td><button id="Bh"><img src="Imagenes/Bohrio.png" alt="Bohrio"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="Hs"><img src="Imagenes/Hasio.png" alt="Hasio"></button></td>
+                    <td><button id="Mt"><img src="Imagenes/Meitnerio.png" alt="Meitnerio"></button></td>
+                    <td><button id="Ds"><img src="Imagenes/Darmstatio.png" alt="Darmstatio"></button></td>
+                    <td><button id="Rg"><img src="Imagenes/Roenigenio.png" alt="Roenigenio"></button></td>
+                    <td><button id="Cn"><img src="Imagenes/Copenicio.png" alt="Copenicio"></button></td>
+                </tr>
+                </table>
+                
+                <table class="ElementosOtrosMetales">
+                    <tr>
+                        <td><button id="Al"><img src="Imagenes/Aluminio.png" alt="Aluminio"></button></td>
+                        <td><button id="Ga"><img src="Imagenes/Galio.png" alt="Galio"></button></td>
+                        <td><button id="In"><img src="Imagenes/Indio.png" alt="Indio"></button></td>
+                        <td><button id="Sn"><img src="Imagenes/Estaño.png" alt="Estaño"></button></td>
+                        <td><button id="Tl"><img src="Imagenes/Talio.png" alt="Talio"></button></td>
+                        <td><button id="Pb"><img src="Imagenes/Plomo.png" alt="Plomo"></button></td>
+                        <td><button id="Bi"><img src="Imagenes/Bismuto.png" alt="Bismuto"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="Nh"><img src="Imagenes/Nihonio.png" alt="Nihonio"></button></td>
+                        <td><button id="Fl"><img src="Imagenes/Flerovio.png" alt="Flerovio"></button></td>
+                        <td><button id="Mc"><img src="Imagenes/Moscovio.png" alt="Moscovio"></button></td>
+                        <td><button id="Lv"><img src="Imagenes/Livermorio.png" alt="Livermorio"></button></td>
+                    </tr>
+                </table>
+                
+                <table class="ElementosLantanidos">
+                    <tr>
+                        <td><button id="La"><img src="Imagenes/Lantano.png" alt="Lantano"></button></td>
+                        <td><button id="Ce"><img src="Imagenes/Cerio.png" alt="Cerio"></button></td>
+                        <td><button id="Pr"><img src="Imagenes/Praseodimio.png" alt="Praseodimio"></button></td>
+                        <td><button id="Nd"><img src="Imagenes/Neodimio.png" alt="Neodimio"></button></td>
+                        <td><button id="Pm"><img src="Imagenes/Prometio.png" alt="Prometio"></button></td>
+                        <td><button id="Sm"><img src="Imagenes/Samario.png" alt="Samario"></button></td>
+                        <td><button id="Eu"><img src="Imagenes/Europio.png" alt="Europio"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="Gd"><img src="Imagenes/Gadolinio.png" alt="Gadolinio"></button></td>
+                        <td><button id="Tb"><img src="Imagenes/Terbio.png" alt="Terbio"></button></td>
+                        <td><button id="Dy"><img src="Imagenes/Disprosio.png" alt="Disprosio"></button></td>
+                        <td><button id="Ho"><img src="Imagenes/Holmio.png" alt="Holmio"></button></td>
+                        <td><button id="Er"><img src="Imagenes/Erbio.png" alt="Erbio"></button></td>
+                        <td><button id="Tm"><img src="Imagenes/Tulio.png" alt="Tulio"></button></td>
+                        <td><button id="Lu"><img src="Imagenes/Iterbio.png" alt="Iterbio"></button></td>
+                    </tr>
+                </table>
+                
+                <table class="ElementosActinidos">
+                    <tr>
+                        <td><button id="Ac"><img src="Imagenes/Actinio.png" alt="Actinio"></button></td>
+                        <td><button id="Th"><img src="Imagenes/Torio.png" alt="Torio"></button></td>
+                        <td><button id="U"><img src="Imagenes/Uranio.png" alt="Uranio"></button></td>
+                        <td><button id="Np"><img src="Imagenes/Neptunio.png" alt="Neptunio"></button></td>
+                        <td><button id="Pu"><img src="Imagenes/Plutonio.png" alt="Plutonio"></button></td>
+                        <td><button id="Am"><img src="Imagenes/Americio.png" alt="Americio"></button></td>
+                        <td><button id="Cm"><img src="Imagenes/Curio.png" alt="Curio"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="Bk"><img src="Imagenes/Berkelio.png" alt="Berkelio"></button></td>
+                        <td><button id="Cf"><img src="Imagenes/Californio.png" alt="Californio"></button></td>
+                        <td><button id="Es"><img src="Imagenes/Einstenio.png" alt="Einstenio"></button></td>
+                        <td><button id="Fm"><img src="Imagenes/Fermio.png" alt="Fermio"></button></td>
+                        <td><button id="Md"><img src="Imagenes/Mendelevio.png" alt="Mendelevio"></button></td>
+                        <td><button id="No"><img src="Imagenes/Nobelio.png" alt="Nobelio"></button></td>
+                    </tr>
+                </table>
+                
+                <table class="ElementosMetaloides">
+                    <tr>
+                        <td><button id="B"><img src="Imagenes/Boro.png" alt="Boro"></button></td>
+                        <td><button id="Si"><img src="Imagenes/Silicio.png" alt="Silicio"></button></td>
+                        <td><button id="Ge"><img src="Imagenes/Germanio.png" alt="Germanio"></button></td>
+                        <td><button id="As"><img src="Imagenes/Arsenico.png" alt="Arsenico"></button></td>
+                        <td><button id="Sb"><img src="Imagenes/Antimonio.png" alt="Antimonio"></button></td>
+                        <td><button id="Te"><img src="Imagenes/Teluro.png" alt="Teluro"></button></td>
+                        <td><button id="Po"><img src="Imagenes/Polonio.png" alt="Polonio"></button></td>
+                    </tr>
+                </table>
+                
+                <table class="ElementosHalogenos">
+                    <tr>
+                        <td><button id="F"><img src="Imagenes/Fluor.png" alt="Fluor"></button></td>
+                        <td><button id="Cl"><img src="Imagenes/Cloro.png" alt="Cloro"></button></td>
+                        <td><button id="Br"><img src="Imagenes/Bromo.png" alt="Bromo"></button></td>
+                        <td><button id="I"><img src="Imagenes/Yodo.png" alt="Yodo"></button></td>
+                        <td><button id="At"><img src="Imagenes/Astato.png" alt="Astato"></button></td>
+                        <td><button id="Ts"><img src="Imagenes/Teneso.png" alt="Teneso"></button></td>
+                    </tr>
+                </table>
+                
+
+        </div>
+        <div class="Resultados">
+            <h3>Elementos selecionados</h3>
+                <div class="EleccionElementos">
+                    <button id="Eleccion1" class="BtnEle1">#</button>
+                    <h2>+</h2>
+                    <button id="Eleccion2" class="BtnEle2">#</button>
+                </div>
+            <div class="BarraDeNumOx">
+                <h4 class="TexTipoM">Numeros de oxidacion metalicos</h4>
+                <div class="NumerosOxidacionMetalicos">
+                    <button id="OxM1" class="OxM1">#</button>
+                    <button id="OxM2" class="OxM2">#</button>
+                    <button id="OxM3" class="OxM3">#</button>
+                    <button id="OxM4" class="OxM4">#</button>
+                    <button id="OxM5" class="OxM5">#</button>
+                    <button id="OxM6" class="OxM6">#</button>
+                </div>
+                <h4 class="TexTipoNM">Numeros de oxidacion no metalicos</h4>
+                <div class="NumerosOxidacionNoMetalicos">
+                    <button id="OxNM1" class="OxNM1">#</button>
+                    <button id="OxNM2" class="OxNM2">#</button>
+                    <button id="OxNM3" class="OxNM3">#</button>
+                </div>
+            </div>
+            <button id="Combinar">Combinar Elementos</button>
+            <h2>Resultados:</h2>
+            <div class="FormulaCompleta">
+                <h2 class="Res1">#</h2>
+                <h2>+</h2>
+                <h2 class="Res2">#</h2>
+                <h2>-></h2>
+                <h2 class="Producto">#</h2>
+            </div>
+            <h2>Nomeclaturas:</h2>
+            <div class="Tradicional">
+                <h3>Tradicional: </h3>
+                <h3 class="NomTradicional">...</h3>
+            </div>
+            <div class="Sistematica">
+                <h3>Sistematica: </h3>
+                <h3 class="NomSistematica">...</h3>
+            </div>
+            <div class="NumStock">
+                <h3>Num. de stock: </h3>
+                <h3 class="NomStock">...</h3>
+            </div>
+        </div>
+    </div>
+    <div class="ElementosNoCombinables">
+        <h1>Elementos que no se pueden combinar</h1>
+        <table class="GasesNobles">
+            <tr>
+                <td><button><img src="Imagenes/Helio.png" alt="Helio"></button></td>
+                <td><button><img src="Imagenes/Neon.png" alt="Neon"></button></td>
+                <td><button><img src="Imagenes/Argon.png" alt="Argon"></button></td>
+                <td><button><img src="Imagenes/Kripton.png" alt="Kripton"></button></td>
+                <td><button><img src="Imagenes/Xenon.png" alt="Xenon"></button></td>
+                <td><button><img src="Imagenes/Radon.png" alt="Radon"></button></td>
+                <td><button><img src="Imagenes/Oganeson.png" alt="Oganeson"></button></td>
+            </tr>
+        </table>
+    </div>
+    <footer><p>Verción: 2.25.2</p></footer>
+    <script src="JS/FuncionesCalculadora.js"></script>
+</body>
+</html>

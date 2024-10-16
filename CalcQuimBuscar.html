@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <title>Calculadora quimica</title>
+</head>
+<body>
+    <header>
+        <div class="Titulo">
+            <a href="index.html"><h1>Calculadora quimica</h1></a>
+        </div>
+        <div class="Opciones">
+            <a href="index.html">Inicio</a>
+            <a href="CalcQuimEleguir.html">Empezar</a>
+            <a href="CalcQuimBuscar.html">Buscar Elemento</a>
+        </div>
+    </header>
+    <div class="BarraBusqueda">
+        <input class="ElemtoBuscar" type="text" placeholder="Ingrese el nombre del elemento">
+        <button id="BtnBuscar">Buscar</button>
+    </div>
+    <div class="SeEncontroElemento">
+        <h2 class="EstadoDeBusqueda"></h2>
+        <h3 class="RazonInfo"></h3>
+    </div>
+    <div class="InfoDelElemento">
+        <table class="ElementoEncontrado">
+            <tr>
+                <td><img class="FotoEle" src="Imagenes/VacioDeBusqueda.png" alt="Elemento encontrado"></td>
+                <td class="InfoEncontrada">
+                    <h2 class="NombreEle">Nombre: </h2>
+                    <h2 class="SimboloEle">Simbolo: </h2>
+                    <h2 class="NumAtomEle">Número atomico: </h2>
+                    <h2 class="MasaAtomEle">Masa atomica: </h2>
+                    <h2 class="NumElectrEle">N° de electrones: </h2>
+                    <h2 class="NumProtEle">N° de protones: </h2>
+                    <h2 class="NumNeutEle">N° de neutrones: </h2>
+                    <h2 class="NumOxEle">Números de oxidación: </h2>
+                    <h2 class="ElectronegatividadEle">Electronegatividad: </h2>
+                    <h2 class="ConfElectrEle">Configuración electronica: </h2>
+                    <h2 class="ElectrDeValEle">Electrones de valencia: </h2>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer><p>Verción: 2.25.2</p></footer>
+    <script src="JS/FuncionesBuscarElemento.js"></script>
+</body>
+</html>
