@@ -3,7 +3,7 @@ const Elementos = {
     Hidrogeno: Hidrogeno={
         Nombre: "Hidrogeno",
         NumOx: [["-1"], ["+1"]],
-        Nomeclatura: ["Hidruro", "hidrogeno", "hidruro"],
+        Nomeclatura: ["Hidruro", "Hidrogeno", "hidruro", "hidrogeno"],
         Simbolo: "H",
         Tipo: "Ácido"
     },
@@ -765,31 +765,31 @@ function Combinar(a, b){
         }
         else if (a.Simbolo == "H" && NumOx1.charAt(0) == "-"){
             Prod.textContent = b.Simbolo + NumOxA + a.Simbolo + NumOxB;
-            Tradicional.textContent = a.Nomeclatura[0] + " " + BucleSobreLista(b, parseInt(NumOxB));
-            NumStock.textContent = a.Nomeclatura[2] + "uro" + " de " + a.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx2);
-            Sistematica.textContent = a.Nomeclatura[1] + " de " + b.Nomeclatura[1];
+            Tradicional.textContent = Hidrogeno.Nomeclatura[0] + " " + BucleSobreLista(b, parseInt(NumOxB));
+            NumStock.textContent = Hidrogeno.Nomeclatura[0] + " de " + a.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx2);
+            Sistematica.textContent = Hidrogeno.Nomeclatura[0] + " de " + b.Nomeclatura[1];
         }
         else if (b.Simbolo == "H" && NumOx2.charAt(0) == "-"){
             Prod.textContent = a.Simbolo + NumOxB + b.Simbolo + NumOxA;
-            Tradicional.textContent = b.Nomeclatura[2] + "uro" + " " + BucleSobreLista(a, parseInt(NumOxA));
-            NumStock.textContent = b.Nomeclatura[2] + "uro" + " de " + a.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx1);
-            Sistematica.textContent = a.Nomeclatura[1] + " de " + b.Nomeclatura[1];
+            Tradicional.textContent = Hidrogeno.Nomeclatura[0] + " " + BucleSobreLista(a, parseInt(NumOxA));
+            NumStock.textContent = Hidrogeno.Nomeclatura[0] + " de " + a.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx1);
+            Sistematica.textContent = a.Nomeclatura[0] + " de " + Hidrogeno.Nomeclatura[4];
         }
         else if (a.Simbolo = "H" && NumOx1.charAt(0) == "+"){
             EleConUroB = b.Nomeclatura[2].charAt(0).toUpperCase() + b.Nomeclatura[2].slice(1);
-            EleConUroA = a.Nomeclatura[2].charAt(0).toUpperCase() + a.Nomeclatura[2].slice(1);
+            EleConUroA = Hidrogeno.Nomeclatura[2].charAt(0).toUpperCase() + Hidrogeno.Nomeclatura[2].slice(1);
 
             Prod.textContent = "H" + NumOxB + b.Simbolo + NumOxA;
-            Tradicional.textContent = EleConUroA + "uro" + " de " + a.Nomeclatura[1];
-            Sistematica.textContent = EleConUroB + "uro" + " de " + Hidrogeno.Nomeclatura[1];
+            Tradicional.textContent = EleConUroA + "uro" + " de " + Hidrogeno.Nomeclatura[4];
+            Sistematica.textContent = EleConUroB + "uro" + " de " + Hidrogeno.Nomeclatura[4];
         }
         else if (b.Simbolo = "H" && NumOx2.charAt(0) == "+"){
-            EleConUroA = b.Nomeclatura[2].charAt(0).toUpperCase() + b.Nomeclatura[2].slice(1);
+            EleConUroA = Hidrogeno.Nomeclatura[2].charAt(0).toUpperCase() + Hidrogeno.Nomeclatura[2].slice(1);
             EleConUroB = a.Nomeclatura[2].charAt(0).toUpperCase() + a.Nomeclatura[2].slice(1);
 
             Prod.textContent = "H" + NumOxA + a.Simbolo + NumOxB;
-            Tradicional.textContent = EleConUroB + "uro" + " de " + b.Nomeclatura[1];
-            Sistematica.textContent = EleConUroA + "uro" + " de " + Hidrogeno.Nomeclatura[1];
+            Tradicional.textContent = EleConUroB + "uro" + " de " + Hidrogeno.Nomeclatura[4];
+            Sistematica.textContent = EleConUroA + "uro" + " de " + Hidrogeno.Nomeclatura[4];
         };
     };
 };
