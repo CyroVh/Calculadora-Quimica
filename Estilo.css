@@ -32,7 +32,7 @@ body header{
     color: black;
     box-shadow: 1px 1px 10px var(--SombraHeader);
     font-weight: 700;
-    font-size: 130%;
+    font-size: 1.1rem;
     display: flex;
     flex-direction: row;
 }
@@ -74,21 +74,21 @@ header .Opciones a{
     border-radius: 20px;
     padding: 1rem;
     font-weight: 700;
-    font-size: 120%;
+    font-size: 1rem;
     transition: all 1s;
 }
 .Empezar a:hover{
     font-size: large;
-    padding: 2rem;
+    padding: 1.3rem;
     color: var(--ColorBoton);
     background-color: var(--ColorLetraH);
     border-radius: 30px;
 }
 .Empezar h1{
-    margin: 2% 0%;
+    margin: 1rem 0;
 }
 .Subtitulo1{
-    margin-top: 2%;
+    margin-top: 4rem;
 }
 .Referencia{
     border-radius: 20px;
@@ -96,15 +96,15 @@ header .Opciones a{
     box-shadow: 1px 1px 10px var(--ColorSombraBoton);
     color: var(--ColorLetraH);
     text-shadow: 1px 1px 10px var(--ColorHeader);
-    margin: 2% 1%;
-    padding: 2%;
+    margin: 1rem 0.5rem;
+    padding: 1rem;
 }
 .Referencia table tr td{
-    width: 20%;
+    width: 23rem;
 }
 .Ayuda{
-    margin: 2% 1%;
-    padding: 1%;
+    margin: 1rem 0.7rem;
+    padding: 0.7rem;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -116,77 +116,68 @@ header .Opciones a{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin: 1% 1% 1% 1%;
+    margin: 0.5rem;
 }
 .Ayuda div h1{
     border: 2px solid black;
-    padding: 3%;
+    box-shadow: 1px 1px 10px rgb(26, 34, 43);
+    padding: 2.5rem;
     width: auto;
 }
 .Ayuda div h2{
-    margin: 3% 2%;
+    margin: 2.7rem 1rem;
 }
 .Ayuda .MetalesAlcalinos h1{
     background-color: var(--MetalesAlcalinos);
     color: var(--MetalesAlcalinos);
-    box-shadow: 1px 1px 10px rgb(32, 42, 53);
 }
 .Ayuda .Alcalinoterreos h1{
     background-color: var(--Alcalinoterreos);
     color: var(--Alcalinoterreos);
-    box-shadow: 1px 1px 10px rgb(32, 42, 53);
 }
 .Ayuda .MetalesDeTransicion h1{
     background-color: var(--MetalesDeTransicion);
     color: var(--MetalesDeTransicion);
-    box-shadow: 1px 1px 10px rgb(32, 43, 53);
 }
 .Ayuda .MetalesPobres h1{
     background-color: var(--MetalesPobres);
     color: var(--MetalesPobres);
-    box-shadow: 1px 1px 10px rgb(32, 43, 53);
 }
 .Ayuda .Lantanidos h1{
     background-color: var(--Lantanidos);
     color: var(--Lantanidos);
-    box-shadow: 1px 1px 10px rgb(27, 35, 44);
 }
 .Ayuda .Actinidos h1{
     background-color: var(--Actinidos);
     color: var(--Actinidos);
-    box-shadow: 1px 1px 10px rgb(27, 35, 44);
 }
 .Ayuda .Metaloides h1{
     background-color: var(--Metaloides);
     color: var(--Metaloides);
-    box-shadow: 1px 1px 10px rgb(27, 35, 44);
 }
 .Ayuda .NoMetales h1{
     background-color: var(--NoMetales);
     color: var(--NoMetales);
-    box-shadow: 1px 1px 10px rgb(26, 34, 43);
 }
 .Ayuda .Halogenos h1{
     background-color: var(--Halogenos);
     color: var(--Halogenos);
-    box-shadow: 1px 1px 10px rgb(26, 34, 43);
 }
 .Ayuda .GasesNobles h1{
     background-color: var(--GasesNobles);
     color: var(--GasesNobles);
-    box-shadow: 1px 1px 10px rgb(28, 37, 46);
 }
 /*Pagina CalcQuimBuscar*/
 .BarraBusqueda{
     display: flex;
     flex-direction: row;
-    margin: 3%;
+    margin: 2.3rem;
     align-items: center;
 }
 .BarraBusqueda input{
-    width: 80%;
-    margin: 0 3%;
-    padding: 1%;
+    width: 80rem;
+    margin-right: 1.7rem;
+    padding: 0.8rem;
     border: none;
     background-color: var(--ColorBoton);
     box-shadow: 1px 1px 10px var(--ColorSombraBoton);
@@ -196,20 +187,20 @@ header .Opciones a{
     background-color: var(--ColorBoton);
     box-shadow: 1px 1px 10px var(--ColorSombraBoton);
     color: var(--ColorLetraH);
-    padding: 1% 2%;
+    padding: 0.8rem 1.5rem;
     border: none;
     transition: all 1s ;
 }
 .BarraBusqueda button:hover{
-    padding: 1% 3%;
+    padding: 0.9rem 2rem;
     font-size: medium;
     font-weight: 600;
     color: var(--ColorBoton);
     background-color: var(--ColorLetraH);
 }
 .SeEncontroElemento{
-    margin: 2%;
-    padding: 2%;
+    margin: 1.5rem;
+    padding: 1.4rem;
     border-radius: 20px;
     transition: all 1s;
     opacity: 0;
@@ -221,15 +212,15 @@ header .Opciones a{
     flex-direction: row;
     background-color: var(--ColorBoton);
     box-shadow: 1px 1px 10px var(--ColorSombraBoton);
-    margin: 2%;
-    padding: 2%;
+    margin: 1rem;
+    padding: 1.4rem;
     border-radius: 20px;
 }
 .ElementoEncontrado .InfoEncontrada h2{
     font-weight: 800;
     color: var(--ColorLetraH);
     text-shadow: 1px 1px 10px var(--ColorHeader);
-    margin-left: 2%;
+    margin-left: 1rem;
 }
 .InfoEncontrada{
     width: 100%;
@@ -245,33 +236,33 @@ header .Opciones a{
 .Elementos, .ElementosNoCombinables{
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 59rem;
     border-radius: 10px;
     background-color: var(--ColorBoton);
     box-shadow: 1px 1px 10px var(--ColorSombraBoton);
-    margin: 2% 1%;
-    padding: 1%;
+    margin: 1rem 0.7rem;
+    padding: 0.7rem;
 }
 .Elementos h1, .ElementosNoCombinables h1, .Resultados h3{
     color: var(--ColorLetraTitulo);
     text-shadow: 1px 1px 10px var(--SombraHeader);
-    margin: 2%;
+    margin: 1rem;
 }
 .Elementos table button img, .ElementosNoCombinables table button img{
-    width: 120px;
-    height: 140px;
-    transition: all 1s;
+    width: 7.5rem;
+    height: 9rem;
+    transition: all 0.5s;
 }
 .Elementos table button, .ElementosNoCombinables table button{
     border: 1px solid black;
     box-shadow: 1px 1px 5px black;
-    margin: 1%;
-    padding: 0%;
+    margin: 0.2rem;
+    padding: 0;
 }
 .Elementos img:hover, .ElementosNoCombinables  img:hover{
     box-shadow: 2px 2px 20px black;
-    width: 145px;
-    height: 165px;
+    width: 8rem;
+    height: 10rem;
 }
 .ElementosNoMetales button{
     background-color: var(--NoMetales);
@@ -301,27 +292,26 @@ header .Opciones a{
     background-color: var(--Halogenos);
 }
 .ElementosNoCombinables .GasesNobles  button{
-    
     background-color: var(--GasesNobles);
 }
 .Resultados{
     display: flex;
     flex-direction: column;
-    width: 17%;
+    width: 14.5rem;
     height: min-content;
     align-items: center;
     background-color: var(--ColorBoton);
     box-shadow: 1px 1px 10px var(--ColorSombraBoton);
     color: var(--ColorLetraTitulo);
     border-radius: 10px;
-    margin: 2% 1%;
-    padding: 1%;
+    margin: 1rem 0.7rem;
+    padding: 0.7rem;
 }
 .Resultados div:not(.BarraDeNumOx){
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 8% 0%;
+    margin: 1rem 0;
     width: 100%;
 }
 .Resultados button{
@@ -330,12 +320,12 @@ header .Opciones a{
     box-shadow: 1px 1px 10px var(--ColorSombraBoton);
     color: var(--ColorLetraH);
     font-weight: 800;
-    padding: 3%;
-    margin-bottom: 3%;
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
     transition: all 0.5s;
 }
 #Combinar:hover{
-    padding: 4%;
+    padding: 0.8rem;
     font-size: medium;
     color: var(--ColorBoton);
     background-color: var(--ColorLetraH);
@@ -345,15 +335,13 @@ header .Opciones a{
     color: var(--ColorLetraH);
 }
 .Resultados .EleccionElementos button, .Resultados .EleccionElementos h2{
-    font-size: 250%;
+    font-size: 3.2rem;
 }
 .Resultados .EleccionElementos h2{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 1rem;
 }
 .Resultados .FormulaCompleta h2{
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 0 0.5rem;
 }
 .BarraDeNumOx{
     display: none;
@@ -361,7 +349,7 @@ header .Opciones a{
 }
 .BarraDeNumOx button{
     font-size: medium;
-    margin: 2%;
+    margin: 1rem;
     display: none;
     opacity: 0;
 }
