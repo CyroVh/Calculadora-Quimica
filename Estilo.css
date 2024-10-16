@@ -1,0 +1,367 @@
+:root{
+    --MetalesAlcalinos: rgb(236, 141, 112);
+    --Alcalinoterreos: rgb(226, 144, 90);
+    --MetalesPobres: rgb(241, 198, 78);
+    --MetalesDeTransicion: rgb(207, 205, 82);
+    --Lantanidos: rgb(140, 204, 66);
+    --Actinidos: rgb(96, 218, 60);
+    --Metaloides: rgb(52, 206, 65);
+    --NoMetales: rgb(115, 60, 216);
+    --Halogenos: rgb(231, 67, 196);
+    --GasesNobles: rgb(83, 201, 181);
+    --ColorFondo: rgb(19, 31, 102);
+    --ColorHeader: rgb(20, 32, 83);
+    --SombraHeader: rgb(4, 11, 44);
+    --ColorLetraH: rgb(188, 210, 252);
+    --ColorLetraTitulo: rgb(174, 181, 196);
+    --ColorBoton: rgb(53, 60, 68);
+    --ColorSombraBoton: rgb(34, 44, 54);
+}
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(196, 247, 230);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body header{
+    background-color: var(--ColorHeader);
+    color: black;
+    box-shadow: 1px 1px 10px var(--SombraHeader);
+    font-weight: 700;
+    font-size: 130%;
+    display: flex;
+    flex-direction: row;
+}
+header .Titulo{
+    display: flex;
+    flex-direction: column;
+    width: 1500px;
+    height: 85px;
+}
+header .Titulo a{
+    color: var(--ColorLetraH);
+    text-shadow: 1px 1px 15px black;
+    width: 500px;
+    margin: 2% 2%;
+}
+header .Opciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 650px;
+    height: 80px;
+}
+header .Opciones a{
+    text-shadow: 1px 1px 15px black;
+    color: var(--ColorLetraH);
+    margin: 8% 3%;
+    height: 30px;
+}
+.Empezar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.Empezar a{
+    background-color: var(--ColorBoton);
+    color: var(--ColorLetraH);
+    box-shadow: 1px 1px 10px var(--ColorSombraBoton);
+    border-radius: 20px;
+    padding: 1%;
+    font-weight: 700;
+    font-size: 120%;
+    transition: all 1s;
+}
+.Empezar a:hover{
+    font-size: large;
+    padding: 2%;
+    color: var(--ColorBoton);
+    background-color: var(--ColorLetraH);
+    border-radius: 30px;
+}
+.Empezar h1{
+    margin: 2% 0%;
+}
+.Subtitulo1{
+    margin-top: 2%;
+}
+.Referencia{
+    border-radius: 20px;
+    background-color: var(--ColorBoton);
+    box-shadow: 1px 1px 10px var(--ColorSombraBoton);
+    color: var(--ColorLetraH);
+    text-shadow: 1px 1px 10px var(--ColorHeader);
+    margin: 2% 1%;
+    padding: 2%;
+}
+.Referencia table tr td{
+    width: 20%;
+}
+.Ayuda{
+    margin: 2% 1%;
+    padding: 1%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ColorBoton);
+    color: var(--ColorLetraH);
+    box-shadow: 1px 1px 10px var(--ColorSombraBoton);
+}
+.Ayuda div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 1% 1% 1% 1%;
+}
+.Ayuda div h1{
+    border: 2px solid black;
+    padding: 3%;
+    width: auto;
+}
+.Ayuda div h2{
+    margin: 3% 2%;
+}
+.Ayuda .MetalesAlcalinos h1{
+    background-color: var(--MetalesAlcalinos);
+    color: var(--MetalesAlcalinos);
+    box-shadow: 1px 1px 10px rgb(32, 42, 53);
+}
+.Ayuda .Alcalinoterreos h1{
+    background-color: var(--Alcalinoterreos);
+    color: var(--Alcalinoterreos);
+    box-shadow: 1px 1px 10px rgb(32, 42, 53);
+}
+.Ayuda .MetalesDeTransicion h1{
+    background-color: var(--MetalesDeTransicion);
+    color: var(--MetalesDeTransicion);
+    box-shadow: 1px 1px 10px rgb(32, 43, 53);
+}
+.Ayuda .MetalesPobres h1{
+    background-color: var(--MetalesPobres);
+    color: var(--MetalesPobres);
+    box-shadow: 1px 1px 10px rgb(32, 43, 53);
+}
+.Ayuda .Lantanidos h1{
+    background-color: var(--Lantanidos);
+    color: var(--Lantanidos);
+    box-shadow: 1px 1px 10px rgb(27, 35, 44);
+}
+.Ayuda .Actinidos h1{
+    background-color: var(--Actinidos);
+    color: var(--Actinidos);
+    box-shadow: 1px 1px 10px rgb(27, 35, 44);
+}
+.Ayuda .Metaloides h1{
+    background-color: var(--Metaloides);
+    color: var(--Metaloides);
+    box-shadow: 1px 1px 10px rgb(27, 35, 44);
+}
+.Ayuda .NoMetales h1{
+    background-color: var(--NoMetales);
+    color: var(--NoMetales);
+    box-shadow: 1px 1px 10px rgb(26, 34, 43);
+}
+.Ayuda .Halogenos h1{
+    background-color: var(--Halogenos);
+    color: var(--Halogenos);
+    box-shadow: 1px 1px 10px rgb(26, 34, 43);
+}
+.Ayuda .GasesNobles h1{
+    background-color: var(--GasesNobles);
+    color: var(--GasesNobles);
+    box-shadow: 1px 1px 10px rgb(28, 37, 46);
+}
+/*Pagina CalcQuimBuscar*/
+.BarraBusqueda{
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+    align-items: center;
+}
+.BarraBusqueda input{
+    width: 80%;
+    margin: 0 3%;
+    padding: 1%;
+    border: none;
+    background-color: var(--ColorBoton);
+    box-shadow: 1px 1px 10px var(--ColorSombraBoton);
+    color: var(--ColorLetraH);
+}
+.BarraBusqueda button{
+    background-color: var(--ColorBoton);
+    box-shadow: 1px 1px 10px var(--ColorSombraBoton);
+    color: var(--ColorLetraH);
+    padding: 1% 2%;
+    border: none;
+    transition: all 1s ;
+}
+.BarraBusqueda button:hover{
+    padding: 1% 3%;
+    font-size: medium;
+    font-weight: 600;
+    color: var(--ColorBoton);
+    background-color: var(--ColorLetraH);
+}
+.SeEncontroElemento{
+    margin: 2%;
+    padding: 2%;
+    border-radius: 20px;
+    transition: all 1s;
+    opacity: 0;
+    display: none;
+}
+
+.ElementoEncontrado{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--ColorBoton);
+    box-shadow: 1px 1px 10px var(--ColorSombraBoton);
+    margin: 2%;
+    padding: 2%;
+    border-radius: 20px;
+}
+.ElementoEncontrado .InfoEncontrada h2{
+    font-weight: 800;
+    color: var(--ColorLetraH);
+    text-shadow: 1px 1px 10px var(--ColorHeader);
+    margin-left: 2%;
+}
+.InfoEncontrada{
+    width: 100%;
+}
+.ElementoEncontrado tbody{
+    width: 100%;
+}
+/*Pagina CalcQuimElegir*/
+.CuerpoPag{
+    display: flex;
+    flex-direction: row;
+}
+.Elementos, .ElementosNoCombinables{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    border-radius: 10px;
+    background-color: var(--ColorBoton);
+    box-shadow: 1px 1px 10px var(--ColorSombraBoton);
+    margin: 2% 1%;
+    padding: 1%;
+}
+.Elementos h1, .ElementosNoCombinables h1, .Resultados h3{
+    color: var(--ColorLetraTitulo);
+    text-shadow: 1px 1px 10px var(--SombraHeader);
+    margin: 2%;
+}
+.Elementos table button img, .ElementosNoCombinables table button img{
+    width: 120px;
+    height: 140px;
+    transition: all 1s;
+}
+.Elementos table button, .ElementosNoCombinables table button{
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+    margin: 1%;
+    padding: 0%;
+}
+.Elementos img:hover, .ElementosNoCombinables  img:hover{
+    box-shadow: 2px 2px 20px black;
+    width: 145px;
+    height: 165px;
+}
+.ElementosNoMetales button{
+    background-color: var(--NoMetales);
+}
+.ElementosMetalesAlcalinos button{
+    background-color: var(--MetalesAlcalinos);
+}
+.ElementosAlcalinoterreos button{
+    background-color: var(--Alcalinoterreos);
+}
+.ElementosMetalesDeTransicion button{
+    background-color: var(--MetalesDeTransicion);
+}
+.ElementosOtrosMetales button{
+    background-color: var(--MetalesPobres);
+}
+.ElementosLantanidos button{
+    background-color: var(--Lantanidos);
+}
+.ElementosActinidos button{
+    background-color: var(--Actinidos)
+}
+.ElementosMetaloides button{
+    background-color: var(--Metaloides);
+}
+.ElementosHalogenos button{
+    background-color: var(--Halogenos);
+}
+.ElementosNoCombinables .GasesNobles  button{
+    
+    background-color: var(--GasesNobles);
+}
+.Resultados{
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    height: min-content;
+    align-items: center;
+    background-color: var(--ColorBoton);
+    box-shadow: 1px 1px 10px var(--ColorSombraBoton);
+    color: var(--ColorLetraTitulo);
+    border-radius: 10px;
+    margin: 2% 1%;
+    padding: 1%;
+}
+.Resultados div:not(.BarraDeNumOx){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 8% 0%;
+    width: 100%;
+}
+.Resultados button{
+    border: none;
+    background-color: var(--ColorBoton);
+    box-shadow: 1px 1px 10px var(--ColorSombraBoton);
+    color: var(--ColorLetraH);
+    font-weight: 800;
+    padding: 3%;
+    margin-bottom: 3%;
+    transition: all 0.5s;
+}
+#Combinar:hover{
+    padding: 4%;
+    font-size: medium;
+    color: var(--ColorBoton);
+    background-color: var(--ColorLetraH);
+}
+#Combinar:active{
+    background-color: var(--ColorBoton);
+    color: var(--ColorLetraH);
+}
+.Resultados .EleccionElementos button, .Resultados .EleccionElementos h2{
+    font-size: 250%;
+}
+.Resultados .EleccionElementos h2{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.Resultados .FormulaCompleta h2{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.BarraDeNumOx{
+    display: none;
+    flex-direction: column;
+}
+.BarraDeNumOx button{
+    font-size: medium;
+    margin: 2%;
+    display: none;
+    opacity: 0;
+}
