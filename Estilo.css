@@ -39,8 +39,8 @@ body header{
 header .Titulo{
     display: flex;
     flex-direction: column;
-    width: 1500px;
-    height: 85px;
+    width: 1500rem;
+    height: 85rem;
 }
 header .Titulo a{
     color: var(--ColorLetraH);
