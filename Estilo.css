@@ -32,9 +32,9 @@ body header{
     color: black;
     box-shadow: 1px 1px 10px var(--SombraHeader);
     font-weight: 700;
-    font-size: 1.1rem;
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 header .Titulo{
     display: flex;
@@ -47,6 +47,7 @@ header .Titulo a{
     text-shadow: 1px 1px 15px black;
     width: 25rem;
     margin: 1rem 1rem;
+    font-size: 1.3rem;
 }
 header .Opciones{
     display: flex;
@@ -60,6 +61,7 @@ header .Opciones a{
     color: var(--ColorLetraH);
     margin: 2rem 1rem;
     height: 1rem;
+    font-size: 1.3rem;
 }
 .Empezar{
     display: flex;
