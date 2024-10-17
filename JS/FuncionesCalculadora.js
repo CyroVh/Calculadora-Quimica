@@ -750,37 +750,39 @@ function Combinar(a, b){
     else{
         NumOxA = NumOx1.charAt(1);
         NumOxB = NumOx2.charAt(1);
+        NumOxABalanceado = 0;
+        NumOxBBalanceado = 0;
         LugarA = "#";
         LugarB = "#";
         if (a.Simbolo == "O"){
-            Prod.textContent = b.Simbolo + NumOxB + a.Simbolo + NumOxA;
-            Tradicional.textContent = b.Nomeclatura[0] + " " + BucleSobreLista(b, parseInt(NumOxB));
-            NumStock.textContent = b.Nomeclatura[0] + "de" + b.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx2);
-            Sistematica.textContent = a.Nomeclatura[1] + " de " + b.Nomeclatura[1];
+            Prod.textContent = Balacear(b,NumOxB,a,NumOxA);
+            Tradicional.textContent = a.Nomeclatura[0] + " " + BucleSobreLista(b, parseInt(NumOxB));
+            NumStock.textContent = a.Nomeclatura[0] + " de " + b.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx2);
+            Sistematica.textContent = Prefijo(a,NumOxABalanceado) + " de "+Prefijo(b, NumOxBBalanceado);
         }
         else if (b.Simbolo == "O"){
-            Prod.textContent = a.Simbolo + NumOxB + b.Simbolo + NumOxA;
+            Prod.textContent = Balacear(a,NumOxA,b,NumOxB);
             Tradicional.textContent = b.Nomeclatura[0] + " " + BucleSobreLista(a, parseInt(NumOxA));
             NumStock.textContent = b.Nomeclatura[0] + "de" + a.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx1);
-            Sistematica.textContent = a.Nomeclatura[1] + " de " + b.Nomeclatura[1];
+            Sistematica.textContent = Prefijo(b,NumOxBBalanceado) + " de "+ Prefijo(a, NumOxABalanceado);
         }
         else if (a.Simbolo == "H" && NumOx1.charAt(0) == "-"){
-            Prod.textContent = Balacear(b,NumOxA,a,NumOxB);
+            Prod.textContent = Balacear(b,NumOxB,a,NumOxA);
             Tradicional.textContent = Hidrogeno.Nomeclatura[0] + " " + BucleSobreLista(b, parseInt(NumOxB));
             NumStock.textContent = Hidrogeno.Nomeclatura[0] + " de " + a.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx2);
-            Sistematica.textContent = Hidrogeno.Nomeclatura[0] + " de " + b.Nomeclatura[1];
+            Sistematica.textContent = Prefijo(a,NumOxABalanceado) + " de "+ Prefijo(b, NumOxBBalanceado);
         }
         else if (b.Simbolo == "H" && NumOx2.charAt(0) == "-"){
-            Prod.textContent = Balacear(a,NumOxB,b,NumOxA);
+            Prod.textContent = Balacear(a,NumOxA,b,NumOxB);
             Tradicional.textContent = Hidrogeno.Nomeclatura[0] + " " + BucleSobreLista(a, parseInt(NumOxA));
             NumStock.textContent = Hidrogeno.Nomeclatura[0] + " de " + a.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx1);
-            Sistematica.textContent = a.Nomeclatura[0] + " de " + Hidrogeno.Nomeclatura[3];
+            Sistematica.textContent = Prefijo(b,NumOxBBalanceado) + " de "+ Prefijo(a, NumOxABalanceado);
         }
         else if (a.Simbolo = "H" && NumOx1.charAt(0) == "+"){
             EleConUroB = b.Nomeclatura[2].charAt(0).toUpperCase() + b.Nomeclatura[2].slice(1);
             EleConUroA = Hidrogeno.Nomeclatura[2].charAt(0).toUpperCase() + Hidrogeno.Nomeclatura[2].slice(1);
 
-            Prod.textContent = Balacear("H",NumOxB,b,NumOxA);
+            Prod.textContent = Balacear(Hidrogeno,NumOxA,b,NumOxB);
             Tradicional.textContent = EleConUroA + "uro" + " de " + Hidrogeno.Nomeclatura[3];
             Sistematica.textContent = EleConUroB + "uro" + " de " + Hidrogeno.Nomeclatura[3];
         }
@@ -788,14 +790,14 @@ function Combinar(a, b){
             EleConUroA = Hidrogeno.Nomeclatura[2].charAt(0).toUpperCase() + Hidrogeno.Nomeclatura[2].slice(1);
             EleConUroB = a.Nomeclatura[2].charAt(0).toUpperCase() + a.Nomeclatura[2].slice(1);
 
-            Prod.textContent = Balacear("H",NumOxA,a,NumOxB);
+            Prod.textContent = Balacear(Hidrogenod,NumOxB,a,NumOxA);
             Tradicional.textContent = EleConUroB + "uro" + " de " + Hidrogeno.Nomeclatura[3];
             Sistematica.textContent = EleConUroA + "uro" + " de " + Hidrogeno.Nomeclatura[3];
         };
     };
 };
 
-//FUNCIONES PARA EVITAR REPETERI LARGAS LINEAS DE CODIGO
+//FUNCIONES PARA EVITAR REPETERIR LARGAS LINEAS DE CODIGO
 //------BUCLES------
 function BucleSobreLista(Seleccion, NumeroOxEleguido){
     var TamañoLista = 0;
@@ -859,10 +861,40 @@ function ConvertirNumerosRomanos(NumeroOxEleguido){
             return "(VII)"
     };
 };
-function Prefijo(Seleccion, NumeroDeOxidacionElegido){};
-function Balacear(Producto){
-    Producto = Prod.textContent();
-    
+function Prefijo(Seleccion, NumeroDeOxidacionElegido){
+    switch (parseInt(NumeroDeOxidacionElegido)){
+        case 1:
+            return "Mono" + Seleccion.Nomeclatura[1];
+        case 2:
+            return "Di" + Seleccion.Nomeclatura[1];
+        case 3:
+            return "Tri" + Seleccion.Nomeclatura[1];
+        case 4:
+            return "Tetra" + Seleccion.Nomeclatura[1];
+        case 5:
+            return "Penta" + Seleccion.Nomeclatura[1];
+        case 6:
+            return "Hexa" + Seleccion.Nomeclatura[1];
+        case 7:
+            return "Hepta" + Seleccion.Nomeclatura[1];
+    };
+};
+function Balacear(a,NumOxA,b,NumOxB){
+    NumOxA = parseInt(NumOxA);
+    NumOxB = parseInt(NumOxB);
+    if (NumOxA > NumOxB  || NumOxA == NumOxB && NumOxA % NumOxB == 0 && NumOxB % NumOxB == 0){
+        NumOxABalanceado = (NumOxA/NumOxB);
+        NumOxBBalanceado = (NumOxB/NumOxB);
+        return a.Simbolo + (NumOxB/NumOxB) + b.Simbolo + (NumOxA/NumOxB);
+    }
+    else if (NumOxB > NumOxA || NumOxA == NumOxB && NumOxB % NumOxA == 0 && NumOxA % NumOxA == 0){
+        NumOxABalanceado = (NumOxB/NumOxA);
+        NumOxBBalanceado = (NumOxA/NumOxA);
+        return a.Simbolo + (NumOxA/NumOxA) + b.Simbolo + (NumOxB/NumOxA);
+    }
+    else{
+        return a.Simbolo + NumOxB + b.Simbolo + NumOxA;
+    };
 };
 //------CAMBIAR EL COLOR DE LOS BOTONES AL SER SELECCIONADOS------
 var ColorBoton = "rgb(53, 60, 68)";
