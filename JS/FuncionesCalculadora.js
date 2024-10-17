@@ -717,6 +717,7 @@ function CapturarNM3(){
 };
 
 //VARIABLES Y FUNCIONES EN CASO DE PRESIONAR EL BOTÓN DE COMBINAR ELEMENTOS
+var Balanceo = " ";
 function Combinar(a, b){
     if (NumOx1 == "Nada" || NumOx2 == "Nada"){
         alert("Seleccione el numero de oxidación antes de conbinar lo elementos");
@@ -764,13 +765,13 @@ function Combinar(a, b){
             Sistematica.textContent = a.Nomeclatura[1] + " de " + b.Nomeclatura[1];
         }
         else if (a.Simbolo == "H" && NumOx1.charAt(0) == "-"){
-            Prod.textContent = b.Simbolo + NumOxA + a.Simbolo + NumOxB;
+            Prod.textContent = Balacear(b,NumOxA,a,NumOxB);
             Tradicional.textContent = Hidrogeno.Nomeclatura[0] + " " + BucleSobreLista(b, parseInt(NumOxB));
             NumStock.textContent = Hidrogeno.Nomeclatura[0] + " de " + a.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx2);
             Sistematica.textContent = Hidrogeno.Nomeclatura[0] + " de " + b.Nomeclatura[1];
         }
         else if (b.Simbolo == "H" && NumOx2.charAt(0) == "-"){
-            Prod.textContent = a.Simbolo + NumOxB + b.Simbolo + NumOxA;
+            Prod.textContent = Balacear(a,NumOxB,b,NumOxA);
             Tradicional.textContent = Hidrogeno.Nomeclatura[0] + " " + BucleSobreLista(a, parseInt(NumOxA));
             NumStock.textContent = Hidrogeno.Nomeclatura[0] + " de " + a.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx1);
             Sistematica.textContent = a.Nomeclatura[0] + " de " + Hidrogeno.Nomeclatura[3];
@@ -779,7 +780,7 @@ function Combinar(a, b){
             EleConUroB = b.Nomeclatura[2].charAt(0).toUpperCase() + b.Nomeclatura[2].slice(1);
             EleConUroA = Hidrogeno.Nomeclatura[2].charAt(0).toUpperCase() + Hidrogeno.Nomeclatura[2].slice(1);
 
-            Prod.textContent = "H" + NumOxB + b.Simbolo + NumOxA;
+            Prod.textContent = Balacear("H",NumOxB,b,NumOxA);
             Tradicional.textContent = EleConUroA + "uro" + " de " + Hidrogeno.Nomeclatura[3];
             Sistematica.textContent = EleConUroB + "uro" + " de " + Hidrogeno.Nomeclatura[3];
         }
@@ -787,7 +788,7 @@ function Combinar(a, b){
             EleConUroA = Hidrogeno.Nomeclatura[2].charAt(0).toUpperCase() + Hidrogeno.Nomeclatura[2].slice(1);
             EleConUroB = a.Nomeclatura[2].charAt(0).toUpperCase() + a.Nomeclatura[2].slice(1);
 
-            Prod.textContent = "H" + NumOxA + a.Simbolo + NumOxB;
+            Prod.textContent = Balacear("H",NumOxA,a,NumOxB);
             Tradicional.textContent = EleConUroB + "uro" + " de " + Hidrogeno.Nomeclatura[3];
             Sistematica.textContent = EleConUroA + "uro" + " de " + Hidrogeno.Nomeclatura[3];
         };
@@ -796,7 +797,7 @@ function Combinar(a, b){
 
 //FUNCIONES PARA EVITAR REPETERI LARGAS LINEAS DE CODIGO
 //------BUCLES------
-function BucleSobreLista(Seleccion , NumeroOxEleguido){
+function BucleSobreLista(Seleccion, NumeroOxEleguido){
     var TamañoLista = 0;
     for (PosLista in Seleccion.NumOx){
         TamañoLista = Seleccion.NumOx[PosLista].length;
@@ -857,6 +858,11 @@ function ConvertirNumerosRomanos(NumeroOxEleguido){
         case 7:
             return "(VII)"
     };
+};
+function Prefijo(Seleccion, NumeroDeOxidacionElegido){};
+function Balacear(Producto){
+    Producto = Prod.textContent();
+    
 };
 //------CAMBIAR EL COLOR DE LOS BOTONES AL SER SELECCIONADOS------
 var ColorBoton = "rgb(53, 60, 68)";
