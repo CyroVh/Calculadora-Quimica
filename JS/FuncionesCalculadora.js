@@ -5,7 +5,7 @@ const Elementos = {
         NumOx: [["-1"], ["+1"]],
         Nomeclatura: ["Hidruro", "Hidrogeno", "hidruro", "hidrogeno"],
         Simbolo: "H",
-        Tipo: "Ácido"
+        Tipo: "Amfotero"
     },
     Litio: Litio={
         Nombre: "Litio",
@@ -30,17 +30,17 @@ const Elementos = {
     },
     Carbono: Carbono={
         Nombre: "Carbono",
-        NumOx: [["+4"],[]],
+        NumOx: [["+2","+4"],["-2"]],
         Nomeclatura: ["Carbono", "carbono", "carbon"],
         Simbolo: "C",
-        Tipo: "Ácido"
+        Tipo: "Amfotero"
     },
     Nitrogeno: Nitrogeno={
         Nombre: "Nitrogeno",
-        NumOx: [["+3", "+5"]],
+        NumOx: [["+2","+3","+4" ,"+5"], []],
         Nomeclatura: ["Nitrogeno", "nitrogeno", "Nitr"],
         Simbolo: "N",
-        Tipo: "Ácido"
+        Tipo: "Básico"
     },
     Oxigeno: Oxigeno={
         Nombre: "Oxigeno",
@@ -72,42 +72,42 @@ const Elementos = {
     },
     Aluminio: Aluminio={
         Nombre: "Aluminio",
-        NumOx: ["+3"],
+        NumOx: [["+3"],[]],
         Nomeclatura: ["Aluminio", "aluminio", "Alimin"],
         Simbolo: "Al",
         Tipo: "Básico"
     },
     Silicio: Silicio={
         Nombre: "Silicio",
-        NumOx: ["+4"],
+        NumOx: [["+4"],[]],
         Nomeclatura: ["Silicio", "silicio", "Sil"],
         Simbolo: "Si",
-        Tipo: "Ácido"
+        Tipo: "Básico"
     },
     Fosforo: Fosforo={
         Nombre: "Fosforo",
-        NumOx: ["+3", "+5"],
+        NumOx: [["+3", "+4" ,"+5"],["-3"]],
         Nomeclatura: ["Fosforo", "fosforo", "Fosfor"],
         Simbolo: "P",
-        Tipo: "Ácido"
+        Tipo: "Amfotero"
     },
     Azufre: Azufre={
         Nombre: "Azufre",
-        NumOx: ["-2", "+4", "+6"],
+        NumOx: [["+4", "+6"], ["-2"]],
         Nomeclatura: ["Azufre", "azufre", "Azufr"],
         Simbolo: "S",
-        Tipo: "Ácido"
+        Tipo: "Amfotero"
     },
     Cloro: Cloro={
         Nombre: "Cloro",
-        NumOx: ["+1", "+3", "+5", "+7"],
+        NumOx: [["+1", "+3", "+5", "+7"],["-1"]],
         Nomeclatura: ["Cloro", "cloro", "clor"],
         Simbolo: "Cl",
-        Tipo: "Ácido"
+        Tipo: "Amfotero"
     },
     Potasio: Potasio={
         Nombre: "Potasio",
-        NumOx: ["+1"],
+        NumOx: [["+1"]],
         Nomeclatura: ["Potasio", "potasio", "potas"],
         Simbolo: "K",
         Tipo: "Básico"
@@ -156,80 +156,80 @@ const Elementos = {
     },
     Vanadio: Vanadio={
         Nombre: "Vanadio",
-        NumOx: ["+2", "+3", "+4", "+5"],
+        NumOx: [["+2", "+3", "+4"], ["+5"]],
         Nomeclatura: ["Vanadio", "vanadio", "vanad"],
         Simbolo: "V",
-        Tipo: "Básico"
+        Tipo: "Amfotero"
     },
     Cromo: Cromo={
         Nombre: "Cromo",
-        NumOx: ["+2", "+3", "+6"],
+        NumOx: [["+2", "+3"], ["-2","+4","+6"]],
         Nomeclatura: ["Cromo", "cromo", "Crom"],
         Simbolo: "Cr",
-        Tipo: "Básico"
+        Tipo: "Amfotero"
     },
     Manganeso: Manganeso={
         Nombre: "Manganeso",
-        NumOx: ["+2", "+3", "+4", "+6", "+7"],
+        NumOx: [["+2", "+3"], ["+4", "+6", "+7"]],
         Nomeclatura: ["Manganeso", "manganesio", "Manganes"],
         Simbolo: "Mn",
-        Tipo: "Básico"
+        Tipo: "Amfotero"
     },
     Hierro: Hierro={
         Nombre: "Hierro",
-        NumOx: ["+2", "+3"],
+        NumOx: [["+2", "+3"], []],
         Nomeclatura: ["Hierro", "hierro", "ferr"],
         Simbolo: "Fe",
         Tipo: "Básico"
     },
     Cobalto: Cobalto={
         Nombre: "Cobalto",
-        NumOx: ["+2", "+3"],
+        NumOx: [["+2", "+3"], []],
         Nomeclatura: ["Cobalto", "cobalto", "cobalt"],
         Simbolo: "Co",
         Tipo: "Básico"
     },
     Niquel: Niquel={
         Nombre: "Niquel",
-        NumOx: ["+2", "+3"],
+        NumOx: [["+2", "+3"], []],
         Nomeclatura: ["Niquel", "niquel", "niquel"],
         Simbolo: "Ni",
         Tipo: "Básico"
     },
     Cobre: Cobre={
         Nombre: "Cobre",
-        NumOx: ["+1", "+2"],
+        NumOx: [["+1", "+2"], []],
         Nomeclatura: ["Cobre", "cobre", "cupr"],
         Simbolo: "Cu",
         Tipo: "Básico"
     },
     Zinc: Zinc={
         Nombre: "Zinc",
-        NumOx: ["+2"],
+        NumOx: [["+2"], []],
         Nomeclatura: ["Zinc", "zin"],
         Simbolo: "Zn",
         Tipo: "Básico"
     },
     Galio: Galio={
         Nombre: "Galio",
-        NumOx: ["+3"],
+        NumOx: [["+3"], []],
         Nomeclatura: ["Galio", "galio", "gal"],
         Simbolo: "Ga",
         Tipo: "Básico"
     },
     Germanio: Germanio={
         Nombre: "Germanio",
-        NumOx: ["+2", "+4"],
+        NumOx: [["+2", "+4"], []],
         Nomeclatura: ["Germanio", "germanio", "German"],
         Simbolo: "Ge",
         Tipo: "Ácido"
     },
-    Arsenio: Arsenio={
-        Nombre: "Arsenio",
-        NumOx: ["+3", "+5"],
+    Arsenico: Arsenico={
+        Nombre: "Arsenico",
+        NumOx: [["+3", "+5"],["-3"]],
         Nomeclatura: ["Arsenico", "arsenico", "arsen"],
         Simbolo: "As",
-        Tipo: "Ácido"
+        Tipo: "Amfotero"
     },
     Selenio: Selenio={
         Nombre: "Selenio",
@@ -496,7 +496,7 @@ document.getElementById("Cu").addEventListener("click", () => ElegirElemento(Ele
 document.getElementById("Zn").addEventListener("click", () => ElegirElemento(Elementos.Zinc));
 document.getElementById("Ga").addEventListener("click", () => ElegirElemento(Elementos.Galio));
 document.getElementById("Ge").addEventListener("click", () => ElegirElemento(Elementos.Germanio));
-document.getElementById("As").addEventListener("click", () => ElegirElemento(Elementos.Arsenio));
+document.getElementById("As").addEventListener("click", () => ElegirElemento(Elementos.Arsenico));
 document.getElementById("Se").addEventListener("click", () => ElegirElemento(Elementos.Selenio));
 document.getElementById("Br").addEventListener("click", () => ElegirElemento(Elementos.Bromo));
 document.getElementById("Zr").addEventListener("click", () => ElegirElemento(Elementos.Zirconio));
@@ -758,25 +758,25 @@ function Combinar(a, b){
             Prod.textContent = Balacear(b,NumOxB,a,NumOxA);
             Tradicional.textContent = a.Nomeclatura[0] + " " + BucleSobreLista(b, parseInt(NumOxB));
             NumStock.textContent = a.Nomeclatura[0] + " de " + b.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx2);
-            Sistematica.textContent = Prefijo(a,NumOxABalanceado) + " de "+Prefijo(b, NumOxBBalanceado);
+            Sistematica.textContent = Prefijo(a,NumOxABalanceado) + " de " + Prefijo(b, NumOxBBalanceado);
         }
         else if (b.Simbolo == "O"){
             Prod.textContent = Balacear(a,NumOxA,b,NumOxB);
             Tradicional.textContent = b.Nomeclatura[0] + " " + BucleSobreLista(a, parseInt(NumOxA));
-            NumStock.textContent = b.Nomeclatura[0] + "de" + a.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx1);
+            NumStock.textContent = b.Nomeclatura[0] + " de " + a.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx1);
             Sistematica.textContent = Prefijo(b,NumOxBBalanceado) + " de "+ Prefijo(a, NumOxABalanceado);
         }
         else if (a.Simbolo == "H" && NumOx1.charAt(0) == "-"){
             Prod.textContent = Balacear(b,NumOxB,a,NumOxA);
             Tradicional.textContent = Hidrogeno.Nomeclatura[0] + " " + BucleSobreLista(b, parseInt(NumOxB));
             NumStock.textContent = Hidrogeno.Nomeclatura[0] + " de " + a.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx2);
-            Sistematica.textContent = Prefijo(a,NumOxABalanceado) + " de "+ Prefijo(b, NumOxBBalanceado);
+            Sistematica.textContent = Prefijo(a,NumOxABalanceado) + " de " + Prefijo(b, NumOxBBalanceado);
         }
         else if (b.Simbolo == "H" && NumOx2.charAt(0) == "-"){
             Prod.textContent = Balacear(a,NumOxA,b,NumOxB);
             Tradicional.textContent = Hidrogeno.Nomeclatura[0] + " " + BucleSobreLista(a, parseInt(NumOxA));
             NumStock.textContent = Hidrogeno.Nomeclatura[0] + " de " + a.Nomeclatura[1] + ConvertirNumerosRomanos(NumOx1);
-            Sistematica.textContent = Prefijo(b,NumOxBBalanceado) + " de "+ Prefijo(a, NumOxABalanceado);
+            Sistematica.textContent = Prefijo(b,NumOxBBalanceado) + " de " + Prefijo(a, NumOxABalanceado);
         }
         else if (a.Simbolo = "H" && NumOx1.charAt(0) == "+"){
             EleConUroB = b.Nomeclatura[2].charAt(0).toUpperCase() + b.Nomeclatura[2].slice(1);
